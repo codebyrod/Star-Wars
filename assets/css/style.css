@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #000000 ;;
 }
 
-.section-figure-container-top-background{
+.header-section-figure-container-top-background{
     width: 98.9vw;
     position: relative;
     z-index: 0;
 }
 
-.section-figure-container-top-personagem{
+.header-section-figure-container-top-personagem{
     width: 70rem;
     position: absolute;
     top: 0;
@@ -18,14 +22,14 @@
     z-index: 2;
 }
 
-.section-figure-container-top-left{
+.header-section-figure-container-top-left{
     width: 24rem;
     position: absolute;
     top: 375px;
     left: 300px;
     z-index: 1;
 }
-.section-figure-container-top-right{
+.header-section-figure-container-top-right{
     width: 26rem;
     position: absolute;
     z-index: 1;
@@ -33,9 +37,183 @@
     right: 137px;
 }
 
-.section-figure-container-top-box{
+.header-section-figure-container-top-box{
     width: 9rem;
     position: absolute;
-    bottom: 80px;
+    bottom: 16px;
     right: 180px;
 }
+
+.body-section-initial{
+    /* background-color: coral; */
+    position: relative;
+}
+
+.body-section-div{
+    position: relative;
+    width: 40rem;
+    height: 30rem;
+    /* background-color: brown; */
+}
+
+.body-section-initial-aside{
+    position: relative;
+}
+
+.body-section-figure-container-aside{
+    width: 43rem;
+    position: absolute;
+    top: -2px;
+    
+}
+
+.body-section-initial-div-inital{
+    width: 80rem;
+    height: 29rem;
+    position: relative;
+    left: 230px;
+    /* background-color: cyan; */
+}
+
+.body-section-initial-div-inital::after{
+    content: '';
+    width: 80rem;
+    height: 0.2rem;
+    display: block;
+    background: black;
+    margin: 5rem 0px;
+}
+
+.body-section-div-initial-figure-btn-container{
+    width: 21rem;
+    position:absolute;
+    top: -50px;
+    left: 0px;
+    z-index: 3;
+}
+
+.body-section-initial-div-inital-internal{
+    /* background-color: darkgoldenrod; */
+    width: 79.5rem;
+    height: 28rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align:right;
+}
+
+.body-section-div-initial-txt-container{
+    width: 25.5rem;
+    height: 13rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 0 1rem;
+    /* background-color: rgb(43, 11, 184); */
+}
+
+.body-section-div-initial-txt-container h4{
+    /* background-color: rgb(184, 11, 141); */
+    width: 15rem;
+    height: 5rem;
+    text-transform: uppercase;
+    font-size: 1.4rem ;
+    /* background: darkcyan; */
+}
+
+.body-section-div-initial-txt-container h4::after{
+    content:'';
+    width: 7rem;
+    height: 0.2rem;
+    background: currentColor;
+    display: block;
+    margin: 20px 125px;
+}
+
+.body-section-div-initial-txt-container p{
+    font-size: 1rem ;
+}
+
+.body-section-div-initial-img-container{
+    width: 21.8rem;
+}
+
+.body-section-initial-div-middle{
+    /* background-color: rgb(121, 11, 184); */
+    width: 80rem;
+    height: 45.1rem;
+    position: relative;
+    left: 230px;
+    /* display: flex;
+    align-items: flex-end;
+    justify-content: center; */
+}
+
+/* .body-section-initial-div-middle figure{
+    background-color: chocolate;
+    width: 50rem;
+    height: 53rem;
+} */
+
+.body-section-initial-div-middle figure img{
+    /* background: chartreuse; */
+    position: absolute;
+    bottom: -20px;
+}
+
+#lord-sifh{
+    position: absolute;
+    height: 96%;
+    left: 0;
+    bottom: -60px;
+    z-index: 3;
+}
+
+#jedi-rey{
+    position: absolute;
+    height: 85%;
+    right: 40px;
+    bottom: -60px;
+    z-index: 3;
+}
+
+.body-section-initial-div-middle-nav-container{
+    background-color: deeppink;
+    width: 27rem;
+    height: 35.5rem;
+    text-align: right;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    right: 390px;
+    /* usar @font-face para trazer fonts externa */
+    color: #000000;
+}
+
+.body-section-initial-div-middle-nav-container h3{
+    background-color: dodgerblue;
+    padding: 1rem 0.75rem 1rem 3rem;
+    font-size: 3.75rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+}
+
+.body-section-initial-div-middle-nav-container ul li{
+    font-size: 1.4rem;
+    padding: 0.7rem;
+}
+
+.body-section-middle{
+    background-color: rgb(55, 58, 58);
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
