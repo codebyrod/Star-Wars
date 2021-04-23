@@ -8,6 +8,8 @@
     color: #000000 ;;
 }
 
+/* AQUI COMEÇA A HEADER */
+
 .header-section-figure-container-top-background{
     width: 98.9vw;
     position: relative;
@@ -43,6 +45,9 @@
     bottom: 16px;
     right: 180px;
 }
+
+/* AQUI COMEÇA A MAIN */
+/* AQUI COMEÇA A SEÇÃO INICIAL DA MAIN */
 
 .main-section-initial{
     /* background-color: coral; */
@@ -178,7 +183,7 @@
 }
 
 .main-section-initial-div-middle-nav-container{
-    background-color: deeppink;
+    /* background-color: deeppink; */
     width: 27rem;
     height: 35.5rem;
     text-align: right;
@@ -191,7 +196,7 @@
 }
 
 .main-section-initial-div-middle-nav-container h3{
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
     padding: 1rem 0.75rem 1rem 3rem;
     font-size: 3.75rem;
     line-height: 3.5rem;
@@ -200,26 +205,48 @@
 
 .main-section-initial-div-middle-nav-container ul li{
     font-size: 1.4rem;
-    padding: 0.7rem;
+    height: 8vh;
+    width: 27vw;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
 
+.main-section-initial-div-middle-nav-container ul li a{
+    width: 100%;
+    z-index: 4;
+}
+
+.main-section-initial-div-middle-nav-container ul li:hover a{
+    background-color: brown;
+    color: #FFFFFF;
+    transition: 0.3s ease-in-out;
+}
+
+/* AQUI COMEÇA A SEÇÃO "ATRIBUTOS" DA MAIN */
+
+/* fundo da seção atributos */
 .main-section-middle{
     background-color: #2D2D2D;
-    height: 217vh;
+    height: 228vh;
     position: relative;
     z-index: 1;
 }
 
-.main-section-middle-div-intial-title-container{
+/* caixa para posicionamento do titulo "Atributos" */
+.main-section-middle-div-initial-title-container{
     width: 29vw;
     height: 35vh;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding: 0 0 3rem;
 }
 
+/* título da seção atributos */
 .main-section-middle div h3{
     font-size: 2.5vw;
     font-weight: 900;
@@ -227,127 +254,484 @@
     color: white;
 }
 
-.main-section-middle-div-intial-img-container{
+/* caixa com todas as imagens da primeira divisão da seção atributos */
+.main-section-middle-div-initial-img-container{
     display: flex;
     justify-content: center;
     /* background-color: tomato; */
+    height: 63vh;
 }
 
+/* FLEXIBILIDADE - caixa com a imagem grande de lado de lado da seção atributos */
 .main-section-middle-div-initial-img-aside-container{
-    width: 50vw;
-    background-color: rgb(200, 71, 162);
+    width: 46vw;
+    height: 26.5rem;
+    /* background-color: rgb(200, 71, 162); */
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    z-index: 8;
 }
 
-.main-section-middle-div-intial-img-container img{
+/* inserindo a imagem grande de lado da seção atributos*/
+.main-section-middle-div-initial-img-aside-container img{
     width: 44.5vw;
+    position: absolute;
 }
 
+/* escondendo os elementos para o hover da imagem grande de lado da seção atributos */
+.main-section-middle-div-initial-img-aside-container-div-box-txt{
+    opacity: 0;
+}
+
+/* HOVER - ativando os elementos para o hover da imagem grande de lado da seção atributos*/
+.main-section-middle-div-initial-img-aside-container-div-box-txt:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* HOVER - elemento hover de fundo para a imagem grande de lado da seção atributos*/
+.element-aside{
+    width: 46.6vw;
+    height: 27.7rem;
+    background-color: #D74430;
+    z-index: 4;
+    opacity: 1;
+    position: absolute;
+    opacity: 0.3;
+    top: -10px;
+    right: -16px;
+}
+
+/* HOVER - primeiro elemento do topo  para a imagem grande de lado da seção
+atributos */
+.above-element-aside::before{
+    content: "";
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0px;
+    left: 24px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* HOVER - segundo elemento do topo para a imagem grande de lado da seção 
+atributos */
+.above-element-aside::after{
+    content: "";
+    width: 0.4rem;
+    height: 4rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 4px;
+    left: 24px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* HOVER - título para a imagem grande de lado da seção atributos */
+.atributtes-title-aside{
+    color: #FFFFFF;
+    font-size: 3rem;
+    width: 13rem;
+    /* background-color: aqua; */
+    font-weight: bolder;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* HOVER - texto para a imagem grande de lado da seção atributos */
+.atributtes-txt-aside{
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    width: 35rem;
+    /* background-color: rgb(9, 255, 0); */
+    position: absolute;
+    top: 190px;
+    left: 70px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* HOVER - botão para a imagem grande de lado da seção atributos */
+.atributtes-btn-aside{
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    /* background-color: rgb(153, 0, 255); */
+    border: solid 0.3rem white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14rem;
+    height: 4.2rem;
+    position: absolute;
+    bottom: 33px;
+    left: 25px;
+    z-index: 4;
+}
+
+/* HOVER - primeiro elemento abaixo  para a imagem grande de lado da seção 
+atributos */
+.element-below-aside::before{
+    content: "";
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* HOVER - segundo elemento abaixo para a imagem grande de lado da seção 
+atributos */
+.element-below-aside::after{
+    content: "";
+    width: 0.4rem;
+    height: 4rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* HOVER - flexibilidades dos elementos internos da imagem grande de lado */
+.main-section-middle-div-initial-img-aside-container-div-box-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* FLEXIBILIDADE - caixa coletiva das imagens pequenas da seção atributos */
 .main-section-middle-box-imgs-container{
     display: flex;
     flex-wrap: wrap;
-    background-color: royalblue;
-    width: 45vw;
+    justify-content: flex-start;
+    /* background-color: royalblue; */
+    width: 47vw;
+    height: 57.4vh;
 }
 
-.main-section-middle-box-imgs-container img{
-    width: 20.25vw;
+/* caixa individual das imagens pequenas da seção atributos */
+.main-section-middle-box-imgs-container-figure{
+    position: relative;
+    width: 22.25vw;
+    height: 13.6rem;
+    /* background-color: yellow; */
 }
 
+/* inserindo as imagens pequenas da seção atributos*/
+.main-section-middle-box-imgs-container-figure img{
+    width: 22.25vw;
+}
+
+/* HOVER, FLEXIBILIDADE, POSICIONAMENTO - ocultando os elementos internos das 
+imagens pequenas para o hover da seção atributos */
+.main-section-middle-box-imgs-container-div-box-txt{
+    width: 24vw;
+    height: 14.2rem;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    z-index: 4;
+}
+
+/* HOVER - mostrando os elementos internos das imagens pequenas da seção
+ atributos */
+.main-section-middle-box-imgs-container-div-box-txt:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* HOVER - fundo para as imagens pequenas a ser ativado com o hover 
+que está definido no elemento mãe */
+.element{
+    width: 24vw;
+    height: 14.3rem;
+    background-color: #D74430;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+/* HOVER - primeiro elemento do topo para as imagens pequenas da seção
+atributos */
+.above-element::before{
+    content: "";
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* HOVER - segundo elemento do topo para as imagens pequenas da seção
+atributos */
+.above-element::after{
+    content: "";
+    width: 0.3rem;
+    height: 4rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 4;
+}
+
+/* HOVER - título para as imagens pequenas da seção atributos */
+.atributtes-title{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    width: 7rem;
+    /* background-color: aqua; */
+    font-weight: bolder;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* HOVER - texto para as imagens pequenas da seção atributos */
+.atributtes-txt{
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    width: 20rem;
+    /* background-color: rgb(9, 255, 0); */
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    opacity: 1;
+    z-index: 4;
+}
+
+/* HOVER - btn para as imagens pequenas da seção atributos */
+.atributtes-btn{
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    /* background-color: rgb(153, 0, 255); */
+    border: solid 0.3rem white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 3.2rem;
+    position: absolute;
+    bottom: 5px;
+    left: 17px;
+    z-index: 4;
+}
+
+/* HOVER - primeiro elemento abaixo para as imagens pequenas da seção
+atributos */
+.element-below::before{
+    content: "";
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 1px;
+    right: 13px;
+    z-index: 4;
+}
+
+/* HOVER - segundo elemento abaixo para as imagens pequenas da seção
+atributos */
+.element-below::after{
+    content: "";
+    width: 0.3rem;
+    height: 4rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 1px;
+    right: 13px;
+    z-index: 4;
+}
+
+/* FLEXIBILIDADE - caixa e posicionamento dos elementos da imagem "hierarquia"
+e do texto da seção atributos */
 .main-section-middle-div-final-img-container{
-    width: 92.5vw;
-    background-color: springgreen;
+    width: 93.5vw;
+    /* background-color: springgreen; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
+/* inserindo imagem hierarquia */
 .main-section-middle-div-final-img-container img{
-    width: 85vw;
-    background-color: tomato;
+    width: 88.5vw;
+    /* background-color: tomato; */
     padding: 7vh 0 0;
 }
 
+/* inserindo texto de rodapé da imagem "hierarquia" */
 .main-section-middle-div-final-img-container p{
     width: 44vw;
-    background-color: violet;
+    /* background-color: violet; */
     font-size: 1rem;
     padding: 2vh 0 0;
     text-align: right;
+    color: #FFFFFF;
 }
 
+/* AQUI COMEÇA A SEÇÃO "COMO JOGAR?" DA MAIN */
+
+/* caixa de fundo da seção "como jogar" */
 .main-section-final{
     background-image: linear-gradient( #2D2D2D 50%, #FFFFFF 50%);
+    /* background-color: deeppink; */
     display: flex;
 }
 
+/* POSICIONAMENTO - caixa de fundo da imagem de lado da seção "como jogar" */
 .main-section-final-div-aside-img-container{
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
     width: 35vw;
     height: 87.3vh;
     position: relative;
 }
 
+/* inserindo a imagem de lado da seção "como jogar" */
 .main-section-final-div-aside-img-container img{
-    background-color: crimson;
+    /* background-color: crimson; */
     width: 27.5vw;
     position: absolute;
     right: 0;
     top:0;
 }
 
+/* caixa coletiva dos textos e botões seção "como jogar" */
 .main-section-final-txt-btns-container{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 60vw;
     height: 41.3vw;
 }
 
-.main-section-final-txt-container{
-    background-color: hotpink;
-    height: 43.5vh;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-}
-
+/*POSICIONAMENTO - título da seção "como jogar" */
 .main-section-final-txt-container h3{
+    /* background-color: chartreuse; */
+    width: 60vw;
+    height: 43.6vh;
     color: #FFFFFF;
     font-size: 2.5rem;
     padding: 9rem;
+    text-transform: uppercase;
 }
 
+/*FLEXIBILIDADE - caixa de fundo coletiva dos botões da seção "como jogar" */
 .main-section-final-btns{
-    background-color: dodgerblue;
-    height: 43.5vh;
+    /* background-color: dodgerblue; */
+    height: 44vh;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     padding: 2.5rem 0 0;
 }
 
+/*FLEXIBILIDADE - caixa de fundo individual dos botões da seção "como jogar" */
 .main-section-final-btn-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    /* background-color: darkorchid; */
+    width: 15rem;
+    height: 15rem;
 }
 
+/* título em número dos botões da seção "como jogar" */
 .main-section-final-btn-container h3{
     font-size: 2.5rem;
     font-weight: lighter;
     height: 11vh;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
-.main-section-final-btn-container::after{
+/*cor de fundo dos elementos dos botões da seção "como jogar" */
+.element-button{
+    width: 14.5rem;
+    height: 3.5rem;
+    background-color:#000000;
+    position: absolute;
+    top: 85px;
+    right: 4px;
+    z-index: 4;
+}
+
+/* HOVER - cor de fundo secundário dos elementos dos botões da seção
+"como jogar" para ser acionado com hover */
+.element-button::before{
+    content: "";
+    width: 0rem;
+    height: 3.5rem;
+    background-color: #D74430;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+}
+
+/* HOVER - acionando o hover dos botões */
+.main-section-final-btn-container:hover .element-button::before{
+    width: 14.5rem;
+    transition: 1s;
+}
+
+/* HOVER - deixando com maior peso o texto da seção "como jogar" */
+.main-section-final-btn-container:hover h3{
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+/* elemento abaixo do botão da seção "como jogar"*/
+.object-btn{
     content: "";
     background-color: #000000;
     width: 5vw;
     height: 0.5vh;
+    position: absolute;
+    bottom: 2px;
+    right: 78px;
+    z-index: 3;
 }
 
+/* HOVER - elemento abaixo oculto para acionar o hover da seção "como jogar" */
+.object-btn::before{
+    content: "";
+    width: 0vw;
+    height: 0.5vh;
+    background-color: #D74430;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 4;
+}
+
+/* HOVER - acionando o hover do elemento abaixo dos botões da seção "como jogar" */
+.main-section-final-btn-container:hover .object-btn::before{
+    width: 5rem;
+    transition: 1s;
+    background-color: #D74430;
+}
+
+/* âncora-texto dos botões da seção "como jogar" */
 .main-section-final-btn-container a{
-    background-color: #000000;
+    /* background-color: #000000; */
     color: #FFFFFF;
     font-weight: lighter;
     font-size: 1.5rem;
@@ -357,25 +741,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 5;
+    position: absolute;
+    top: 85px;
+    right: 0px;
 }
 
-.main-section-final-btn-container p{
-    font-size: 1rem;
-    font-weight: lighter;
-    background-color: crimson;
-    height: 11vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
+/* FLEXIBILIDADE - deixando os spans internos flexiveis. As caixas contêm 
+elementos de texto da seção "como jogar" */
 .main-section-final-btn-container-text{
     display: flex;
     flex-direction: column;
     width: 11vw;
     padding: 1rem;
 }
+
+/* texto da seção "como jogar" */
+.main-section-final-btn-container p{
+    font-size: 1rem;
+    font-weight: lighter;
+    /* background-color: crimson; */
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    right: 30px;
+}
+
+/* AQUI COMEÇA A FOOTER */
 
 .footer-section-container{
     display: flex;
@@ -388,7 +784,7 @@
     align-items: flex-end;
     height: 120vh;
     width: 68.5vw;
-    background-color: rgb(50, 204, 58);
+    /* background-color: rgb(50, 204, 58); */
 }
 
 .footer-section-div-container-div-initial{
@@ -416,7 +812,6 @@
     padding: 0 1rem 0 0;
     color: #FFFFFF;
     font-weight: lighter;
-
 }
 
 .footer-section-div-container-div-initial img{
@@ -474,13 +869,10 @@
 }
 
 .footer-section-figure-aside p{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 20vw ;
     font-size: 0.8rem;
     position: absolute;
     bottom: 40px;
     left: 100px;
 }
-
-
-
