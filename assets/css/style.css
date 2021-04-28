@@ -8,13 +8,19 @@
     color: #000000;
 }
 
+
+
 /* AQUI COMEÇA A HEADER */
 /* Imagem de fundo da header */
+
+header{
+    
+}
 
 .header-section-figure-container-top{
     background-image: url(/assets/img/starwars-top-1.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 99vw;
     height: 43vw;
     position: relative;
 }
@@ -25,7 +31,8 @@
     top: 57%;
     left: 22%;
     z-index: 1;
-}
+    /* background-color: aqua; */
+} 
 
 .header-section-figure-container-top-personagem{
     width: 71vw;
@@ -33,6 +40,7 @@
     top: 0%;
     right: 19%;
     z-index: 2;
+    /* background-color: blueviolet; */
 }
 
 .header-section-figure-container-top-right{
@@ -41,6 +49,7 @@
     top: 57%;
     right: 12%;
     z-index: 1;
+    /* background-color: blue; */
 }
 
 .header-section-figure-container-top-box{
@@ -51,13 +60,14 @@
 }
 /* FIM DA HEADER */
 
-/* AQUI COMEÇA A MAIN */
+/*///////////////////// AQUI COMEÇA A MAIN ///////////////*/
 
 /* AQUI COMEÇA A SEÇÃO INICIAL DA MAIN */
 
 /* Primeira seção da main. Tópicos "sobre o jogo" + "estrutura de jogo" */
 .main-section-initial{
     position: relative;
+    /* background-color: blueviolet; */
 }
 
 /* caixa container imagem de lado da seção inicial da main*/
@@ -76,7 +86,6 @@
 /* Primeira caixa da seção inicial da main. Tópico "sobre o jogo"*/
 .main-section-initial-div-inital{
     height: 36vw;
-    width: 100%;
     position: relative;
     /* background-color: cyan; */
 }
@@ -87,7 +96,7 @@
     width: 80vw;
     height: 0.2vw;
     display: block;
-    background: black;
+    background-color: #707070;
     position: absolute;
     bottom: 0%;
     left: 13%;
@@ -106,7 +115,7 @@
 /* caixa container texto, titulo e paragrafo da div "sobre o jogo" da seção inicial da main  */
 .main-section-div-initial-txt-container{
     width: 26vw;
-    background-color: rgb(68, 235, 18);
+    /* background-color: rgb(68, 235, 18); */
     position: absolute;
     bottom: 13%;
     right: 29%;
@@ -120,7 +129,7 @@
     text-transform: uppercase;
     text-align: end;
     font-size: 1.5vw;
-    background: rgb(202, 191, 30);
+    /* background: rgb(202, 191, 30); */
     padding: 0% 3% 0%;
     position: relative;
 }
@@ -128,7 +137,7 @@
 /* elemento do tópico "sobre o jogo" da seção inicial da main */
 .main-section-div-initial-txt-container h4::after{
     content:'';
-    width: 27vw;
+    width: 8vw;
     height: 0.2vw;
     background: currentColor;
     display: block;
@@ -159,7 +168,6 @@
 /* Segunda seção da main "estrutura de jogo" */
 .main-section-initial-div-middle{
     /* background-color: rgb(121, 11, 184); */
-    width: 100vw;
     height: 47vW;
     position: relative;
 }
@@ -202,7 +210,7 @@
 }
 
 .main-section-initial-div-middle-nav-container h3{
-    /* background-color: dodgerblue; */
+    background-color: dodgerblue;
     width: 20vw;
     height: 7.5vw;
     font-size: 3.5vw;
@@ -215,16 +223,15 @@
 }
 
 .main-section-initial-div-middle-nav-container ul li{
-    font-size: 1.3vw;
     width: 26vw;
-    height: 4.5vw;
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 .main-section-initial-div-middle-nav-container ul li a{
-    width: 26vw;
     line-height: 5vw;
     z-index: 4;
+    font-size: 1.5vw;
+    background-color: blueviolet;
 }
 
 .main-section-initial-div-middle-nav-container ul li:hover a{
@@ -234,7 +241,6 @@
 }
 
 /*//////////////////// AQUI COMEÇA A SEÇÃO "ATRIBUTOS" DA MAIN /////////////*/
-
 /* fundo da seção atributos */
 .main-section-middle{
     background-color: #2D2D2D;
@@ -246,7 +252,7 @@
 .main-section-middle-div-initial-title-container{
     width: 29vw;
     height: 16vw;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -272,7 +278,7 @@
 .main-section-middle-div-initial-img-aside-container{
     width: 42.5vw;
     height: 26vw;
-    background-color: rgb(200, 71, 162);
+    /* background-color: rgb(200, 71, 162); */
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -287,7 +293,7 @@
 
 /* escondendo os elementos para o hover da imagem grande de lado da seção atributos */
 .main-section-middle-div-initial-img-aside-container-div-box-txt{
-    opacity: 1;
+    opacity: 0;
 }
 
 /* HOVER - ativando os elementos para o hover da imagem grande de lado da seção atributos*/
@@ -339,7 +345,7 @@
     color: #FFFFFF;
     font-size: 3vw;
     width: 13vw;
-    background-color: aqua;
+    /* background-color: aqua; */
     font-weight: bolder;
     position: absolute;
     top: 6%;
@@ -376,6 +382,7 @@
     bottom: 7%;
     left: 0%;
     z-index: 4;
+    opacity: 1;
 }
 
 /* HOVER - primeiro elemento abaixo  para a imagem grande de lado da seção atributos */
@@ -414,7 +421,7 @@
 /* FLEXIBILIDADE - caixa coletiva das imagens pequenas da seção atributos */
 .main-section-middle-box-imgs-container{
     display: flex;
-    background-color: royalblue;
+    /* background-color: royalblue; */
     width: 46vw;
     height: 26vw;
     display: flex;
@@ -442,7 +449,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    opacity: 1;
+    opacity: 0;
     z-index: 4;
     
 }
@@ -458,7 +465,6 @@
     width: 24vw;
     height: 14.7vw;
     background-color: #D74430;
-    background-color: crimson;
     z-index: 3;
     opacity: 0.5;
 }
@@ -598,9 +604,9 @@
 
 /* POSICIONAMENTO - caixa de fundo da imagem de lado da seção "como jogar" */
 .main-section-final-div-aside-img-container{
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
     width: 35vw;
-    height: 87.3vw;
+    height: 42.3vw;
     position: relative;
 }
 
@@ -609,8 +615,8 @@
     /* background-color: crimson; */
     width: 27.5vw;
     position: absolute;
-    right: 0;
-    top:0;
+    right: 0%;
+    top:0%;
 }
 
 /* caixa coletiva dos textos e botões seção "como jogar" */
@@ -624,17 +630,17 @@
 .main-section-final-txt-container h3{
     /* background-color: chartreuse; */
     width: 60vw;
-    height: 43.6vw;
+    height: 21vw;
     color: #FFFFFF;
     font-size: 2.5vw;
-    padding: 9%;
     text-transform: uppercase;
+    padding: 20% 0 0 20%;
 }
 
 /*FLEXIBILIDADE - caixa de fundo coletiva dos botões da seção "como jogar" */
 .main-section-final-btns{
     /* background-color: dodgerblue; */
-    height: 44vw;
+    height: 21.3vw;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -656,8 +662,8 @@
 .main-section-final-btn-container h3{
     font-size: 2.5vw;
     font-weight: lighter;
-    height: 11vw;
-    /* background-color: blueviolet; */
+    height: 5vw;
+    /* background-color:chartreuse; */
 }
 
 /*cor de fundo dos elementos dos botões da seção "como jogar" */
@@ -666,8 +672,8 @@
     height: 3.5vw;
     background-color:#000000;
     position: absolute;
-    top: 85%;
-    right: 4%;
+    top: 35%;
+    right: 2%;
     z-index: 4;
 }
 
@@ -702,8 +708,8 @@
     width: 5vw;
     height: 0.5vw;
     position: absolute;
-    bottom: 2%;
-    right: 78%;
+    bottom: 0%;
+    left: 34%;
     z-index: 3;
 }
 
@@ -728,7 +734,7 @@
 
 /* âncora-texto dos botões da seção "como jogar" */
 .main-section-final-btn-container a{
-    /* background-color: #000000; */
+    background-color: #000000;
     color: #FFFFFF;
     font-weight: lighter;
     font-size: 1.5vw;
@@ -740,7 +746,7 @@
     justify-content: center;
     z-index: 5;
     position: absolute;
-    top: 85%;
+    top: 35%;
     right: 0%;
 }
 
@@ -757,21 +763,19 @@
     font-size: 1vw;
     font-weight: lighter;
     /* background-color: crimson; */
-    height: 11vw;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: absolute;
-    top: 150%;
-    right: 30%;
+    top: 66%;
+    left: 16%;
 }
 
 /*///////////////////////// AQUI COMEÇA A FOOTER ////////////////////////*/
 
 .footer-section-container{
     display: flex;
-    
 }
 
 .footer-section-div-container{
@@ -779,14 +783,14 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 120vw;
-    width: 68.5vw;
-    /* background-color: rgb(50, 204, 58); */
+    height: 54vw;
+    width: 63.5vw;
+    /* background-color:darkblue; */
 }
 
 .footer-section-div-container-div-initial{
     background-color: #FF5A56;
-    height: 54vw;
+    height: 28vw;
     width: 63.5vw;
     display: flex;
     flex-direction: column;
@@ -809,6 +813,7 @@
     padding: 0 1% 0 0;
     color: #FFFFFF;
     font-weight: lighter;
+    font-size: 1vw;
 }
 
 .footer-section-div-container-div-initial img{
@@ -826,7 +831,7 @@
 
 .footer-section-div-container-div-final{
     background-color: #FF5A56;
-    height: 50vw;
+    height: 16vw;
     width: 63.5vw;
     display: flex;
     flex-direction: column;
@@ -837,6 +842,7 @@
 
 .footer-section-div-container-div-final p{
     width: 28.3vw;
+    font-size: 1vw;
     /* background-color: coral; */
     padding: 0 1% 0 0;
     color:#FFFFFF;
@@ -844,43 +850,40 @@
 }
 
 .footer-section-div-container-div-final img{
-    /* background-color: rgb(185, 41, 142); */
+    /* background-color:darkorchid; */
     width: 12.8vw;
     padding: 1.5% 0;
 }
 
 .footer-section-figure-aside{
     position: relative;
-    /* background-color: rgb(9, 255, 0); */
+    /* background-color:greenyellow; */
     width: 29vw;
-    height: 120vw;
-    bottom: 0%;
-
-    
+    height: 54vw;
+    bottom: 0%;   
 }
 
 .footer-section-figure-aside img{
     position: absolute;
-    top: 0%;
-    left: -165%;
+    top: 6%;
+    right: 0%;
     width: 39vw;
     /* background-color: darkred; */
 }
 
 .footer-section-box-txt{
     width: 20vw;
-    height: 11vw;
+    height: 4vw;
     position: absolute;
     bottom: 0%;
-    left: 34%;
+    left: 21%;
     /* background-color: darkred; */
 }
 
 .footer-section-figure-aside p{
     /* background-color: blueviolet; */
     width: 20vw;
-    font-size: 80%;
-
+    font-size: 0.8vw;
 }
 
 .footer-section-figure-aside p span{
