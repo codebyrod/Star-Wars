@@ -194,7 +194,7 @@ header{
 
 /* nav da seção  */
 .main-section-initial-div-middle-nav-container{
-    background-color: deeppink;
+    /* background-color: deeppink; */
     width: 26vw;
     height: 38vw;
     text-align: right;
@@ -210,7 +210,7 @@ header{
 }
 
 .main-section-initial-div-middle-nav-container h3{
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
     width: 20vw;
     height: 7.5vw;
     font-size: 3.5vw;
@@ -224,14 +224,18 @@ header{
 
 .main-section-initial-div-middle-nav-container ul li{
     width: 26vw;
-    background-color: blue;
+    height: 3.6vw;
+    /* background-color: blue; */
+    line-height: 2vw;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
 }
 
 .main-section-initial-div-middle-nav-container ul li a{
-    line-height: 5vw;
+    /* background-color: blueviolet; */
     z-index: 4;
-    font-size: 1.5vw;
-    background-color: blueviolet;
+    width: 26vw;
 }
 
 .main-section-initial-div-middle-nav-container ul li:hover a{
@@ -686,7 +690,7 @@ header{
     position: absolute;
     top: 0%;
     right: 0%;
-    z-index: 3;
+    z-index: 4;
 }
 
 /* HOVER - acionando o hover dos botões */
@@ -705,6 +709,7 @@ header{
 .object-btn{
     content: "";
     background-color: #000000;
+    /* background-color: lime; */
     width: 5vw;
     height: 0.5vw;
     position: absolute;
@@ -722,7 +727,7 @@ header{
     position: absolute;
     bottom: 0%;
     right: 0%;
-    z-index: 4;
+    z-index: 3;
 }
 
 /* HOVER - acionando o hover do elemento abaixo dos botões da seção "como jogar" */
@@ -734,7 +739,6 @@ header{
 
 /* âncora-texto dos botões da seção "como jogar" */
 .main-section-final-btn-container a{
-    background-color: #000000;
     color: #FFFFFF;
     font-weight: lighter;
     font-size: 1.5vw;
@@ -816,6 +820,10 @@ header{
     font-size: 1vw;
 }
 
+.footer-section-div-container-div-initial p span{
+    color: #FFFFFF;
+}
+
 .footer-section-div-container-div-initial img{
     /* background-color: cyan; */
     width: 14vw;
@@ -848,6 +856,8 @@ header{
     color:#FFFFFF;
     font-weight: lighter;
 }
+
+
 
 .footer-section-div-container-div-final img{
     /* background-color:darkorchid; */
@@ -884,9 +894,4 @@ header{
     /* background-color: blueviolet; */
     width: 20vw;
     font-size: 0.8vw;
-}
-
-.footer-section-figure-aside p span{
-    /* background-color: darkorange; */
-
 }
