@@ -788,8 +788,8 @@
 
 /* caixa de fundo da seção "como jogar" */
 .main-section-final{
-    /* background-image: linear-gradient( #2D2D2D 50%, #FFFFFF 50%); */
-    background-color: deeppink;
+    background-image: linear-gradient( #2D2D2D 50%, #FFFFFF 50%);
+    /* background-color: deeppink; */
     display: flex;
 }
 
@@ -801,7 +801,7 @@
 
 /* POSICIONAMENTO - caixa de fundo da imagem de lado da seção "como jogar" */
 .main-section-final-div-aside-img-container{
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
     width: 35vw;
     height: 42.3vw;
     position: relative;
@@ -832,7 +832,7 @@
 
 /* caixa coletiva dos textos e botões seção "como jogar" */
 .main-section-final-txt-btns-container{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     width: 60vw;
     height: 42.3vw;
 }
@@ -848,7 +848,7 @@
 
 /*POSICIONAMENTO - título da seção "como jogar" */
 .main-section-final-txt-container h3{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     width: 60vw;
     height: 21vw;
     color: #FFFFFF;
@@ -869,7 +869,7 @@
 
 /*FLEXIBILIDADE - caixa de fundo coletiva dos botões da seção "como jogar" */
 .main-section-final-btns{
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
     height: 21.3vw;
     display: flex;
     justify-content: space-around;
@@ -1092,9 +1092,9 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    height: 100%;
+    height: 54vw;
     width: 63.5vw;
-    background-color:darkblue;
+    /* background-color:darkblue; */
 }
 
 @media (max-width:425px){
@@ -1137,6 +1137,7 @@
 @media (max-width:425px){
     .footer-section-div-container-div-initial h3{
         font-size: 12vw;
+}
 }
 
 .footer-section-div-container-div-initial p{
@@ -1227,7 +1228,7 @@
 .footer-section-div-container-div-final p{
     width: 28.3vw;
     font-size: 1vw;
-    background-color: coral;
+    /* background-color: coral; */
     padding: 0 1% 0 0;
     color:#FFFFFF;
     font-weight: lighter;
@@ -1242,7 +1243,7 @@
 
 .footer-section-figure-aside{
     position: relative;
-    background-color:greenyellow;
+    /* background-color:greenyellow; */
     width: 29vw;
     height: 54vw;
     bottom: 0%;   
@@ -1260,7 +1261,7 @@
     top: 6%;
     right: 0%;
     width: 39vw;
-    background-color: darkred;
+    /* background-color: darkred; */
 }
 
 @media (max-width: 425px){
