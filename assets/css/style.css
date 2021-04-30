@@ -8,15 +8,17 @@
     color: #000000;
 }
 
-
-
 /* AQUI COMEÇA A HEADER */
 /* Imagem de fundo da header */
 
-.header-section-figure-container-top{
-    background-image: url(/assets/img/starwars-top-1.png);
-    background-repeat: no-repeat;
-    background-size: 100vw;
+.img-header-background-container{
+    width: 100vw;
+    height: 43vw;
+    position: relative;
+}
+
+.img-header-background{
+    width: 100vw;
     height: 43vw;
     position: relative;
 }
@@ -97,7 +99,6 @@
 @media (max-width:425px){
     .main-section-initial-div-inital{
         height: 200vw;
-        /* background-color:yellow; */
     }
 }
 
@@ -114,21 +115,107 @@
 }
 
 /* imagem vermelha e "button" download da seção inicial da main */
-.main-section-div-initial-figure-btn-container{
-    width: 22vw;
-    position:absolute;
+.img-btn-start-playing-figure-container{
+    width: 21vw;
+    position: relative;
     top: -6%;
     left: 13%;
     z-index: 3;
+    /* background-color: aquamarine; */
 }
 
 @media (max-width:425px){
-    .main-section-div-initial-figure-btn-container{
+    .img-btn-start-playing-figure-container{
         width: 56vw;
-        position: absolute;
         top: 6%;
         left: 36%;
         z-index: 3;
+    }
+}
+
+.img-btn-start-playing{
+    width: 21vw;
+}
+
+@media (max-width:425px){
+    .img-btn-start-playing{
+        width: 57vw;
+    }
+}
+
+.text-button-start-playing{
+    width: 21vw;
+    height: 31vw;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 4;
+}
+
+@media (max-width:425px){
+    .text-button-start-playing{
+        width: 57vw;
+        height: 100%;
+    }
+}
+
+.text-button-start-playing h3{
+    /* background-color: blueviolet; */
+    text-transform: uppercase;
+    width: 12vw;
+    font-size: 2.5vw;
+    color: #FFFFFF;
+}
+
+@media (max-width:425px){
+    .text-button-start-playing h3{
+    /* background-color: blueviolet; */
+    text-transform: uppercase;
+    width: 31vw;
+    font-size: 6.5vw;
+    }
+}
+
+.text-button-start-playing p{
+    /* background-color:brown; */
+    width: 17vw;
+    font-size: 1vw;
+    color: #FFFFFF;
+}
+
+@media (max-width:425px){
+    .text-button-start-playing p{
+    /* background-color: blueviolet; */
+    width: 45vw;
+    font-size: 3.5vw;
+    }
+}
+
+.text-button-start-playing a{
+    /* background-color:black; */
+    width: 13vw;
+    height: 5vw;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.2vw;
+    border-radius: 0.5vw;
+}
+
+@media (max-width:425px){
+    .text-button-start-playing a{
+        /* background-color:black; */
+    width: 32vw;
+    height: 10vw;
+    font-size: 3.5vw;
+    border: solid 0.7vw;
     }
 }
 
@@ -145,7 +232,6 @@
     .main-section-div-initial-txt-container{
         width: 85vw;
         height: 54vw;
-        /* background-color:violet; */
         position: absolute;
         bottom: 3%;
         right: 7%;
