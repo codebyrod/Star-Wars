@@ -198,7 +198,7 @@
 .text-button-start-playing a{
     /* background-color:black; */
     width: 13vw;
-    height: 5vw;
+    height: 4vw;
     color: #FFFFFF;
     text-transform: uppercase;
     font-size: 1.5vw;
@@ -410,7 +410,7 @@
     width: 35vw;
     height: 5.6vw;
     line-height: 4vw;
-    font-size: 2vw;
+    font-size: 2.4vw;
     }
 }
 
@@ -535,9 +535,18 @@
     background-color: #D74430;
     z-index: 4;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.5;
     top: -3%;
     right: -2%;
+}
+
+@media (max-width:425px){
+    .element-aside{
+        width: 84vw;
+        height: 52.7vw;
+        top: -4%;
+        right: 8%;
+    }
 }
 
 /* HOVER - primeiro elemento do topo  para a imagem grande de lado da seção atributos */
@@ -553,6 +562,15 @@
     z-index: 4;
 }
 
+@media (max-width:425px){
+    .above-element-aside::before{
+        width: 12vw;
+        height: 1vw;
+        top: 0%;
+        left: 10%;
+    }
+}
+
 /* HOVER - segundo elemento do topo para a imagem grande de lado da seção  atributos */
 .above-element-aside::after{
     content: "";
@@ -564,6 +582,14 @@
     left: 0%;
     opacity: 1;
     z-index: 4;
+}
+
+@media (max-width:425px){
+    .above-element-aside::after{
+        width: 1vw;
+        height: 12vw;
+        left: 10%;
+    }
 }
 
 /* HOVER - título para a imagem grande de lado da seção atributos */
@@ -580,6 +606,15 @@
     z-index: 4;
 }
 
+@media (max-width:425px){
+    .atributtes-title-aside{
+        font-size: 5.5vw;
+        width: 24vw;
+        top: 12%;
+        left: 16%;
+    }
+}
+
 /* HOVER - texto para a imagem grande de lado da seção atributos */
 .atributtes-txt-aside{
     color: #FFFFFF;
@@ -591,6 +626,16 @@
     left: 5%;
     opacity: 1;
     z-index: 4;
+}
+
+@media (max-width:425px){
+    .atributtes-txt-aside{
+        font-size: 3.6vw;
+        width: 58vw;
+        top: 43%;
+        left: 17%;
+        font-weight: lighter;
+    }
 }
 
 /* HOVER - botão para a imagem grande de lado da seção atributos */
@@ -611,6 +656,17 @@
     opacity: 1;
 }
 
+@media (max-width:425px){
+    .atributtes-btn-aside{
+        font-size: 4.1vw;
+        border: solid 0.8vw white;
+        width: 32vw;
+        height: 8.2vw;
+        bottom: 7%;
+        left: 10%;
+    }
+}
+
 /* HOVER - primeiro elemento abaixo  para a imagem grande de lado da seção atributos */
 .element-below-aside::before{
     content: "";
@@ -624,6 +680,15 @@
     z-index: 4;
 }
 
+@media (max-width:425px){
+    .element-below-aside::before{
+        width: 12vw;
+        height: 1vw;
+        bottom: 0%;
+        right: 10%;
+    }
+}
+
 /* HOVER - segundo elemento abaixo para a imagem grande de lado da seção atributos */
 .element-below-aside::after{
     content: "";
@@ -635,6 +700,15 @@
     right: 0%;
     opacity: 1;
     z-index: 4;
+}
+
+@media (max-width:425px){
+    .element-below-aside::after{
+        width: 1vw;
+        height: 12vw;
+        bottom: 0%;
+        right: 10%;
+    }
 }
 
 /* HOVER - flexibilidades dos elementos internos da imagem grande de lado */
@@ -711,7 +785,22 @@
     justify-content: space-between;
     opacity: 0;
     z-index: 4;
-    
+}
+
+@media (max-width:425px){
+    .main-section-middle-box-imgs-container-div-box-txt{
+        width: 100vw;
+        height: 55vw;
+        align-items: center;
+        opacity: 0;
+        /* background-color: blue; */
+    }
+}
+
+@media (max-width:425px){
+    .main-section-middle-box-imgs-container-div-box-txt{
+        opacity: 0;
+    }
 }
 
 /* HOVER - mostrando os elementos internos das imagens pequenas da seção atributos */
@@ -729,6 +818,16 @@
     opacity: 0.5;
 }
 
+@media (max-width:425px){
+    .element{
+    width: 84vw;
+    height: 51.7vw;
+    position: absolute;
+    left: 10%;
+    top: 3%;
+    }
+}
+
 /* HOVER - primeiro elemento do topo para as imagens pequenas da seção atributos */
 .above-element::before{
     content: "";
@@ -742,6 +841,14 @@
     z-index: 4;
 }
 
+@media(max-width:425px){
+    .above-element::before{
+    width: 12vw;
+    height: 1vw;
+    left: 12%;
+    }
+}
+
 /* HOVER - segundo elemento do topo para as imagens pequenas da seção atributos */
 .above-element::after{
     content: "";
@@ -752,6 +859,14 @@
     top: 5%;
     left: 2%;
     z-index: 4;
+}
+
+@media(max-width:425px){
+    .above-element::after{
+        width: 1vw;
+        height: 12vw;
+        left: 12%;
+    }
 }
 
 /* HOVER - título para as imagens pequenas da seção atributos */
@@ -768,6 +883,15 @@
     z-index: 4;
 }
 
+@media(max-width:425px){
+    .atributtes-title{
+        font-size: 5.5vw;
+        width: 24vw;
+        top: 12%;
+        left: 16%;
+    }
+}
+
 /* HOVER - texto para as imagens pequenas da seção atributos */
 .atributtes-txt{
     color: #FFFFFF;
@@ -780,6 +904,17 @@
     opacity: 1;
     z-index: 4;
 }
+
+@media(max-width:425px){
+    .atributtes-txt{
+        font-size: 3.6vw;
+        width: 58vw;
+        top: 43%;
+        left: 17%;
+        font-weight: lighter;
+    }
+}
+
 
 /* HOVER - btn para as imagens pequenas da seção atributos */
 .atributtes-btn{
@@ -798,6 +933,17 @@
     z-index: 4;
 }
 
+@media(max-width:425px){
+    .atributtes-btn{
+        font-size: 4.1vw;
+        border: solid 0.8vw white;
+        width: 32vw;
+        height: 8.2vw;
+        bottom: 12%;
+        left: 12%;
+    }
+}
+
 /* HOVER - primeiro elemento abaixo para as imagens pequenas da seção atributos */
 .element-below::before{
     content: "";
@@ -805,9 +951,18 @@
     height: 0.3vw;
     background-color: #FFFFFF;
     position: absolute;
-    bottom: 1%;
-    right: 2%;
+    bottom: 6%;
+    right: 3%;
     z-index: 4;
+}
+
+@media(max-width:425px){
+    .element-below::before{
+    width: 12vw;
+    height: 1vw;
+    bottom: 6%;
+    right: 8%;
+    }
 }
 
 /* HOVER - segundo elemento abaixo para as imagens pequenas da seção atributos */
@@ -817,9 +972,18 @@
     height: 4vw;
     background-color: #FFFFFF;
     position: absolute;
-    bottom: 1%;
-    right: 2%;
+    bottom: 6%;
+    right: 3%;
     z-index: 4;
+}
+
+@media(max-width:425px){
+    .element-below::after{
+        width: 1vw;
+        height: 12vw;
+        bottom: 6%;
+        right: 8%;
+    }
 }
 
 /* FLEXIBILIDADE - caixa e posicionamento dos elementos da imagem "hierarquia" e do texto da seção atributos */
@@ -848,7 +1012,7 @@
 @media (max-width:425px){
     .main-section-middle-div-final-img-container img{
     width: 100vw;
-}
+    }
 }
 
 /* inserindo texto de rodapé da imagem "hierarquia" */
@@ -868,7 +1032,6 @@
         padding: 0vw 0 0;
     }
 }
-
 
 /*///////////////// AQUI COMEÇA A SEÇÃO "COMO JOGAR?" DA MAIN ///////////////*/
 
@@ -1033,10 +1196,25 @@
     z-index: 4;
 }
 
+@media (max-width:425px){
+    
+    .element-button::before{
+        width: 0vw;
+        height: 8.5vw;
+        }
+}
+
 /* HOVER - acionando o hover dos botões */
 .main-section-final-btn-container:hover .element-button::before{
     width: 14.5vw;
     transition: 1s;
+}
+
+@media (max-width:425px){
+    .main-section-final-btn-container:hover .element-button::before{
+        width: 30.5vw;
+        height: 8.5vw;
+    }
 }
 
 /* HOVER - deixando com maior peso o texto da seção "como jogar" */
@@ -1080,11 +1258,26 @@
     z-index: 3;
 }
 
+@media (max-width:425px){
+    .object-btn::before{
+        height: 1vw;
+    }
+}
+
 /* HOVER - acionando o hover do elemento abaixo dos botões da seção "como jogar" */
 .main-section-final-btn-container:hover .object-btn::before{
     width: 5vw;
     transition: 1s;
     background-color: #D74430;
+}
+
+@media (max-width:425px){
+    .main-section-final-btn-container:hover .object-btn::before{
+        width: 17vw;
+        height: 1vw;
+        transition: 1s;
+        background-color: #D74430;
+    }
 }
 
 /* âncora-texto dos botões da seção "como jogar" */
@@ -1353,7 +1546,7 @@
 @media (max-width: 425px){
     .footer-section-figure-aside img{
         position: absolute;
-        top: -54%;
+        top: -59%;
         right: 3%;
         width: 89vw;
     }
