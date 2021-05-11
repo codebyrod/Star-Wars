@@ -5,105 +5,91 @@
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     list-style: none;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 /* AQUI COMEÇA A HEADER */
-/* Imagem de fundo da header */
-
-.img-header-background-container{
+.h-figure{
     width: 100vw;
     height: 43vw;
     position: relative;
 }
 
-.img-header-background{
+.h-figure__img{
     width: 100vw;
     height: 43vw;
     position: relative;
 }
 
-.header-section-figure-container-top-left{
+.h-left__img-star{
     width: 22vw;
     position: absolute;
     top: 57%;
     left: 22%;
     z-index: 1;
-    /* background-color: aqua; */
 } 
 
-.header-section-figure-container-top-personagem{
+.h-top__img{
     width: 71vw;
     position: absolute;
     top: 0%;
     right: 19%;
     z-index: 2;
-    /* background-color: blueviolet; */
 }
 
-.header-section-figure-container-top-right{
+.h-right__img-wars{
     width: 22vw;
     position: absolute;
     top: 57%;
     right: 12%;
     z-index: 1;
-    /* background-color: blue; */
 }
 
-.header-section-figure-container-top-box{
+.h-box__img{
     width: 10vw;
     position: absolute;
     top: 75%;
     right: 11%;
 }
-/* FIM DA HEADER */
 
-/*///////////////////// AQUI COMEÇA A MAIN ///////////////*/
-
-/* AQUI COMEÇA A SEÇÃO INICIAL DA MAIN */
-
-/* Primeira seção da main. Tópicos "sobre o jogo" + "estrutura de jogo" */
-.main-section-initial{
+/* aqui começa a main*/
+/* Primeira seção da main. */
+/* caixa da imagem de lado*/
+.m-aside{
     position: relative;
-    /* background-color: blueviolet; */
 }
 
-/* caixa container imagem de lado da seção inicial da main*/
-.main-section-initial-aside{
-    position: relative;
-
-}
-
-/* imagem de lado da seção inicial da main*/
-.main-section-figure-container-aside{
+.m-aside__img{
     width: 47vw;
     position: absolute;
     top: -2%;
 }
 
 @media (max-width:425px){
-    .main-section-figure-container-aside{
+    .m-aside__img{
         width: 68vw;
         position: absolute;
         top: -2%;
     }
 }
 
-/* Primeira caixa da seção inicial da main. Tópico "sobre o jogo"*/
-.main-section-initial-div-inital{
+/* Tópicos "sobre o jogo" + "estrutura de jogo" */
+.m-container-initial{
+    position: relative;
+}
+
+.m-container-card-about{
     height: 36vw;
     position: relative;
-    /* background-color: cyan; */
 }
 
 @media (max-width:425px){
-    .main-section-initial-div-inital{
+    .m-container-card-about{
         height: 200vw;
     }
 }
 
-/* elemento de divisão entre as caixas da seção inicial da main */
-.main-section-initial-div-inital::after{
+.m-container-card-about::after{
     content: '';
     width: 80vw;
     height: 0.2vw;
@@ -114,18 +100,25 @@
     left: 13%;
 }
 
-/* imagem vermelha e "button" download da seção inicial da main */
-.img-btn-start-playing-figure-container{
+@media (max-width:425px){
+    .m-container-card-about::after{
+        height: 1vw;
+        bottom: 2%;
+        width: 90vw;
+        left: 5%;
+    }
+}
+
+.m-card{
     width: 21vw;
     position: relative;
     top: -6%;
     left: 13%;
     z-index: 3;
-    /* background-color: aquamarine; */
 }
 
 @media (max-width:425px){
-    .img-btn-start-playing-figure-container{
+    .m-card{
         width: 56vw;
         top: 6%;
         left: 36%;
@@ -133,20 +126,19 @@
     }
 }
 
-.img-btn-start-playing{
+.m-card__img{
     width: 21vw;
 }
 
 @media (max-width:425px){
-    .img-btn-start-playing{
+    .m-card__img{
         width: 57vw;
     }
 }
 
-.text-button-start-playing{
+.m-card-elements{
     width: 21vw;
     height: 31vw;
-    /* background-color: aquamarine; */
     position: absolute;
     top: 0%;
     display: flex;
@@ -157,49 +149,43 @@
 }
 
 @media (max-width:425px){
-    .text-button-start-playing{
+    .m-card-elements{
         width: 57vw;
         height: 100%;
     }
 }
 
-.text-button-start-playing h3{
-    /* background-color: blueviolet; */
+.m-card-elements__title{
     text-transform: uppercase;
     width: 12vw;
     font-size: 2.5vw;
-    color: #FFFFFF;
+    
 }
 
 @media (max-width:425px){
-    .text-button-start-playing h3{
-    /* background-color: blueviolet; */
+    .m-card-elements__title{
     text-transform: uppercase;
     width: 31vw;
     font-size: 6.5vw;
     }
 }
 
-.text-button-start-playing p{
-    /* background-color:brown; */
+.m-card-elements__txt{
     width: 17vw;
     font-size: 1vw;
-    color: #FFFFFF;
+    
 }
 
 @media (max-width:425px){
-    .text-button-start-playing p{
-    /* background-color: blueviolet; */
+    .m-card-elements__txt{
     width: 45vw;
     font-size: 3.5vw;
     }
 }
 
-.text-button-start-playing a{
-    /* background-color:black; */
+.m-card-elements__btn{
     width: 13vw;
     height: 4vw;
-    color: #FFFFFF;
     text-transform: uppercase;
     font-size: 1.5vw;
     display: flex;
@@ -210,8 +196,7 @@
 }
 
 @media (max-width:425px){
-    .text-button-start-playing a{
-        /* background-color:black; */
+    .m-card-elements__btn{
     width: 32vw;
     height: 10vw;
     font-size: 3.5vw;
@@ -219,17 +204,16 @@
     }
 }
 
-/* caixa container texto, titulo e paragrafo da div "sobre o jogo" da seção inicial da main  */
-.main-section-div-initial-txt-container{
+/* caixa "sobre o jogo" */
+.m-about{
     width: 26vw;
-    /* background-color: rgb(68, 235, 18); */
     position: absolute;
     bottom: 13%;
     right: 29%;
 }
 
 @media (max-width:425px){
-    .main-section-div-initial-txt-container{
+    .m-about{
         width: 85vw;
         height: 54vw;
         position: absolute;
@@ -238,21 +222,19 @@
     }
 }
 
-/* titulo do tópico "sobre o jogo" da seção inicial da main */
-.main-section-div-initial-txt-container h4{
-    /* background-color: rgb(184, 11, 141); */
+.m-about__title{
     width: 26vw;
     height: 2vw;
     text-transform: uppercase;
     text-align: end;
     font-size: 1.5vw;
-    /* background: rgb(202, 191, 30); */
     padding: 0% 3% 0%;
     position: relative;
+    color: #000000;
 }
 
 @media (max-width:425px){
-    .main-section-div-initial-txt-container h4{
+    .m-about__title{
         width: 84vw;
         height: 7vw;
         font-size: 4.5vw;
@@ -260,8 +242,7 @@
     }
 }
 
-/* elemento do tópico "sobre o jogo" da seção inicial da main */
-.main-section-div-initial-txt-container h4::after{
+.m-about__title::after{
     content:'';
     width: 8vw;
     height: 0.2vw;
@@ -274,32 +255,33 @@
 }
 
 @media (max-width:425px){
-    .main-section-div-initial-txt-container h4::after{
+    .m-about__title::after{
         width: 31vw;
         height: 0.7vw;
         margin: 4% 63%;
     }
 }
 
-/* txt do tópico "sobre o jogo" da seção inicial da main */
-.main-section-div-initial-txt-container p{
+.m-about__txt{
     font-size: 1vw;
     text-align: end;
     text-justify: end;
     padding: 13% 3% 0% 0%;
-    /* background-color: darkgoldenrod; */
+    color: #000000;
 }
 
 @media (max-width:425px){
-    .main-section-div-initial-txt-container p{
+    .m-about__txt{
         font-size: 3.9vw;
         padding: 9% 2% 0% 0%;
-        /* background-color: darkgoldenrod; */
     }
 }
 
-/* imagem battlefront da seção inicial da main  */
-.main-section-div-initial-img-container{
+.m-about__txt span{
+    color: #000000;
+}
+
+.m-about__img{
     width: 21.8vw;
     position: absolute;
     bottom: 13%;
@@ -307,7 +289,7 @@
 }
 
 @media (max-width:425px){
-    .main-section-div-initial-img-container{
+    .m-about__img{
         width: 56.8vw;
         position: absolute;
         top: 50%;
@@ -316,15 +298,12 @@
 }
 
 /* Segunda seção da main "estrutura de jogo" */
-.main-section-initial-div-middle{
-    /* background-color: rgb(121, 11, 184); */
+.m-structure{
     height: 47vW;
     position: relative;
 }
 
-/* imagem lord-sifh  */
-#lord-sifh{
-    /* background-color: darkgoldenrod; */
+.m-structure__img-sifh{
     position: absolute;
     width: 48vw;
     left: 16%;
@@ -333,14 +312,14 @@
 }
 
 @media (max-width:425px){
-    #lord-sifh{
-        left: 3%;
+    .m-structure__img-sifh{
+        left: 1%;
+        width: 54vw;
+        top: 9%;
     }
 }
 
-/* imagem jedi-rey */
-#jedi-rey{
-    /* background-color: darkorange; */
+.m-structure__img-jedi{
     position: absolute;
     width: 23vw;
     right: 3%;
@@ -348,9 +327,15 @@
     z-index: 3;
 }
 
-/* nav da seção  */
-.main-section-initial-div-middle-nav-container{
-    /* background-color: deeppink; */
+@media (max-width:425px){
+    .m-structure__img-jedi{
+        width: 28vw;
+        top: 10%;
+        right: 0%;
+    }
+}
+
+.m-nav{
     width: 26vw;
     height: 38vw;
     text-align: right;
@@ -362,43 +347,40 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* usar @font-face para trazer fonts externa */
 }
 
 @media (max-width:425px){
-    .main-section-initial-div-middle-nav-container{
-        /* background-color: deeppink; */
-        width: 35vw;
+    .m-nav{
+        width: 42vw;
         height: 42vw;
-        left: 35%;
+        left: 31%;
     }
 }
 
-.main-section-initial-div-middle-nav-container h3{
-    /* background-color: dodgerblue; */
+.m-nav__title{
     width: 20vw;
     height: 7.5vw;
     font-size: 3.5vw;
     line-height: 4vw;
     font-weight: 600;
+    color: #000000;
 }
 
 @media (max-width:425px){
-    .main-section-initial-div-middle-nav-container h3{
-        /* background-color: dodgerblue; */
+    .m-nav__title{
         width: 27vw;
         height: 8.5vw;
     }
 }
 
-.main-section-initial-div-middle-nav-container h3 span{
+.m-nav__title span{
     font-weight: 900;
+    color: #000000;
 }
 
-.main-section-initial-div-middle-nav-container ul li{
+.m-nav__items{
     width: 26vw;
     height: 3.6vw;
-    /* background-color: blue; */
     line-height: 2vw;
     font-size: 1.5vw;
     display: flex;
@@ -406,39 +388,36 @@
 }
 
 @media (max-width:425px){
-    .main-section-initial-div-middle-nav-container ul li{
-    width: 35vw;
+    .m-nav__items{
+    width: 42vw;
     height: 5.6vw;
     line-height: 4vw;
     font-size: 2.4vw;
     }
 }
 
-.main-section-initial-div-middle-nav-container ul li a{
-    /* background-color: blueviolet; */
+.m-nav__txt{
     z-index: 4;
-    width: 35vw;
+    width: 42vw;
+    color: #000000;
 }
 
-.main-section-initial-div-middle-nav-container ul li:hover a{
+.m-nav__items:hover .m-nav__txt{
     background-color: brown;
-    color: #FFFFFF;
     transition: 0.3s ease-in-out;
+    color: #FFFFFF;
 }
 
-/*//////////////////// AQUI COMEÇA A SEÇÃO "ATRIBUTOS" DA MAIN /////////////*/
-/* fundo da seção atributos */
-.main-section-middle{
+/* seção atributos da main*/
+.m-container-attributes{
     background-color: #2D2D2D;
     position: relative;
     z-index: 1;
 }
 
-/* caixa para posicionamento do titulo "Atributos" */
-.main-section-middle-div-initial-title-container{
+.m-attributes-box{
     width: 29vw;
     height: 16vw;
-    /* background-color: blueviolet; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -446,35 +425,32 @@
 }
 
 @media (max-width:425px){
-    .main-section-middle-div-initial-title-container{
+    .m-attributes-box{
         width: 100vw;
+        height: 20vw;
         justify-content: center;
     }
 }
 
-/* título da seção atributos */
-.main-section-middle div h3{
+.m-attributes-box__title{
     font-size: 2.5vw;
     font-weight: 900;
     text-transform: uppercase;
-    color: white;
 }
 
 @media (max-width:425px){
-    .main-section-middle div h3{
+    .m-attributes-box__title{
         font-size: 3.5vw;
     }
 }
 
-/* caixa com todas as imagens da primeira divisão da seção atributos */
-.main-section-middle-div-initial-img-container{
+.m-attributes-container-imgs{
     display: flex;
     justify-content: center;
-    /* background-color: tomato; */
 }
 
 @media (max-width:425px){
-    .main-section-middle-div-initial-img-container{
+    .m-attributes-container-imgs{
         display: flex;
         justify-content: start;
         flex-direction: column;
@@ -482,11 +458,10 @@
     }
 }
 
-/* FLEXIBILIDADE - caixa com a imagem grande de lado de lado da seção atributos */
-.main-section-middle-div-initial-img-aside-container{
+/* FLEXIBILIDADE - caixa com a imagem grande de lado de lado da seção atributos*/
+.m-attributes-large{
     width: 42.5vw;
     height: 26vw;
-    /* background-color: rgb(200, 71, 162); */
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -494,7 +469,7 @@
 }
 
 @media (max-width:425px){
-    .main-section-middle-div-initial-img-aside-container{
+    .m-attributes-large{
         width: 100vw;
         height: 49vw;
         display: flex;
@@ -505,31 +480,29 @@
     }
 }
 
-/* inserindo a imagem grande de lado da seção atributos*/
-.main-section-middle-div-initial-img-aside-container img{
+.m-attributes-large__img{
     width: 42.5vw;
     position: absolute;
 }
 
 @media (max-width:425px){
-    .main-section-middle-div-initial-img-aside-container img{
+    .m-attributes-large__img{
         width: 80vw;
     }
 }
 
-/* escondendo os elementos para o hover da imagem grande de lado da seção atributos */
-.main-section-middle-div-initial-img-aside-container-div-box-txt{
+/* escondendo os elementos para o hover da imagem grande*/
+.m-attributes-large-hover{
     opacity: 0;
 }
 
-/* HOVER - ativando os elementos para o hover da imagem grande de lado da seção atributos*/
-.main-section-middle-div-initial-img-aside-container-div-box-txt:hover{
+/* HOVER - ativando os elementos para o hover da imagem grande*/
+.m-attributes-large-hover:hover{
     opacity: 1;
     transition: 0.5s;
 }
 
-/* HOVER - elemento hover de fundo para a imagem grande de lado da seção atributos*/
-.element-aside{
+.m-attributes-large-hover__element{
     width: 44vw;
     height: 27.7vw;
     background-color: #D74430;
@@ -541,7 +514,7 @@
 }
 
 @media (max-width:425px){
-    .element-aside{
+    .m-attributes-large-hover__element{
         width: 84vw;
         height: 52.7vw;
         top: -4%;
@@ -549,8 +522,8 @@
     }
 }
 
-/* HOVER - primeiro elemento do topo  para a imagem grande de lado da seção atributos */
-.above-element-aside::before{
+/* HOVER - primeiro elemento de cima  para a imagem grande */
+.m-attributes-large-hover__above::before{
     content: "";
     width: 4vw;
     height: 0.3vw;
@@ -563,7 +536,7 @@
 }
 
 @media (max-width:425px){
-    .above-element-aside::before{
+    .m-attributes-large-hover__above::before{
         width: 12vw;
         height: 1vw;
         top: 0%;
@@ -571,8 +544,8 @@
     }
 }
 
-/* HOVER - segundo elemento do topo para a imagem grande de lado da seção  atributos */
-.above-element-aside::after{
+/* HOVER - segundo elemento de cima para a imagem grande*/
+.m-attributes-large-hover__above::after{
     content: "";
     width: 0.4vw;
     height: 4vw;
@@ -585,19 +558,16 @@
 }
 
 @media (max-width:425px){
-    .above-element-aside::after{
+    .m-attributes-large-hover__above::after{
         width: 1vw;
         height: 12vw;
         left: 10%;
     }
 }
 
-/* HOVER - título para a imagem grande de lado da seção atributos */
-.atributtes-title-aside{
-    color: #FFFFFF;
+.m-attributes-large-hover__title{
     font-size: 3vw;
     width: 13vw;
-    /* background-color: aqua; */
     font-weight: bolder;
     position: absolute;
     top: 6%;
@@ -607,7 +577,7 @@
 }
 
 @media (max-width:425px){
-    .atributtes-title-aside{
+    .m-attributes-large-hover__title{
         font-size: 5.5vw;
         width: 24vw;
         top: 12%;
@@ -615,12 +585,10 @@
     }
 }
 
-/* HOVER - texto para a imagem grande de lado da seção atributos */
-.atributtes-txt-aside{
-    color: #FFFFFF;
+
+.m-attributes-large-hover__txt{
     font-size: 1.6vw;
     width: 35vw;
-    /* background-color: rgb(9, 255, 0); */
     position: absolute;
     bottom: 33%;
     left: 5%;
@@ -629,7 +597,7 @@
 }
 
 @media (max-width:425px){
-    .atributtes-txt-aside{
+    .m-attributes-large-hover__txt{
         font-size: 3.6vw;
         width: 58vw;
         top: 43%;
@@ -638,11 +606,8 @@
     }
 }
 
-/* HOVER - botão para a imagem grande de lado da seção atributos */
-.atributtes-btn-aside{
-    color: #FFFFFF;
+.m-attributes-large-hover__btn{
     font-size: 1.8vw;
-    /* background-color: rgb(153, 0, 255); */
     border: solid 0.3vw white;
     display: flex;
     align-items: center;
@@ -657,7 +622,7 @@
 }
 
 @media (max-width:425px){
-    .atributtes-btn-aside{
+    .m-attributes-large-hover__btn{
         font-size: 4.1vw;
         border: solid 0.8vw white;
         width: 32vw;
@@ -667,8 +632,8 @@
     }
 }
 
-/* HOVER - primeiro elemento abaixo  para a imagem grande de lado da seção atributos */
-.element-below-aside::before{
+/* HOVER - primeiro elemento de baixo da imagem grande*/
+.m-attributes-large-hover__below::before{
     content: "";
     width: 4vw;
     height: 0.3vw;
@@ -681,7 +646,7 @@
 }
 
 @media (max-width:425px){
-    .element-below-aside::before{
+    .m-attributes-large-hover__below::before{
         width: 12vw;
         height: 1vw;
         bottom: 0%;
@@ -689,8 +654,8 @@
     }
 }
 
-/* HOVER - segundo elemento abaixo para a imagem grande de lado da seção atributos */
-.element-below-aside::after{
+/* HOVER - segundo elemento de baixo para a imagem grande*/
+.m-attributes-large-hover__below::after{
     content: "";
     width: 0.4vw;
     height: 4vw;
@@ -703,7 +668,7 @@
 }
 
 @media (max-width:425px){
-    .element-below-aside::after{
+    .m-attributes-large-hover__below::after{
         width: 1vw;
         height: 12vw;
         bottom: 0%;
@@ -711,17 +676,9 @@
     }
 }
 
-/* HOVER - flexibilidades dos elementos internos da imagem grande de lado */
-.main-section-middle-div-initial-img-aside-container-div-box-txt{
+/* FLEXIBILIDADE - caixa coletiva das imagens pequenas*/
+.m-attributes-container-small{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* FLEXIBILIDADE - caixa coletiva das imagens pequenas da seção atributos */
-.main-section-middle-box-imgs-container{
-    display: flex;
-    /* background-color: royalblue; */
     width: 46vw;
     height: 26vw;
     display: flex;
@@ -729,7 +686,7 @@
 }
 
 @media (max-width:425px){
-    .main-section-middle-box-imgs-container{
+    .m-attributes-container-small{
         display: flex;
         width: 100vw;
         height: 196vw;
@@ -740,41 +697,36 @@
     }
 }
 
-/* caixa individual das imagens pequenas da seção atributos */
-.main-section-middle-box-imgs-container-figure{
+/* caixa individual das imagens pequenas*/
+.m-attributes-small{
     position: relative;
     width: 23vw;
     height: 13vw;
-    /* background-color: red; */
 }
 
 @media (max-width:425px){
-    .main-section-middle-box-imgs-container-figure{
+    .m-attributes-small{
         width: 100vw;
         height: 49vw;
         display: flex;
         justify-content: center;
-        /* background-color: aqua; */
     }
 }
 
-/* inserindo as imagens pequenas da seção atributos*/
-.img-small-atributtes{
+.m-attributes-small__img{
     width: 23vw;
     height: 13vw;
-    /* background-color: yellow; */
 }
 
 @media (max-width:425px){
-    .img-small-atributtes{
+    .m-attributes-small__img{
         width: 80vw;
         height: 49vw;
-        /* background-color: yellow; */
     }
 }
 
-/* HOVER, FLEXIBILIDADE, POSICIONAMENTO - ocultando os elementos internos das imagens pequenas para o hover da seção atributos */
-.main-section-middle-box-imgs-container-div-box-txt{
+/* HOVER - ocultando os elementos internos das imagens pequenas*/
+.m-attributes-small-hover{
     width: 24vw;
     height: 14.7vw;
     position: absolute;
@@ -788,29 +740,21 @@
 }
 
 @media (max-width:425px){
-    .main-section-middle-box-imgs-container-div-box-txt{
+    .m-attributes-small-hover{
         width: 100vw;
         height: 55vw;
         align-items: center;
         opacity: 0;
-        /* background-color: blue; */
     }
 }
 
-@media (max-width:425px){
-    .main-section-middle-box-imgs-container-div-box-txt{
-        opacity: 0;
-    }
-}
-
-/* HOVER - mostrando os elementos internos das imagens pequenas da seção atributos */
-.main-section-middle-box-imgs-container-div-box-txt:hover{
+/* HOVER - mostrando os elementos internos das imagens pequenas */
+.m-attributes-small-hover:hover{
     opacity: 1;
     transition: 0.5s;
 }
 
-/* HOVER - fundo para as imagens pequenas a ser ativado com o hover que está definido no elemento mãe */
-.element{
+.m-attributes-small-hover__element{
     width: 24vw;
     height: 14.7vw;
     background-color: #D74430;
@@ -819,7 +763,7 @@
 }
 
 @media (max-width:425px){
-    .element{
+    .m-attributes-small-hover__element{
     width: 84vw;
     height: 51.7vw;
     position: absolute;
@@ -828,8 +772,8 @@
     }
 }
 
-/* HOVER - primeiro elemento do topo para as imagens pequenas da seção atributos */
-.above-element::before{
+/* HOVER - primeiro elemento de cima para as imagens pequenas*/
+.m-attributes-small-hover__above::before{
     content: "";
     width: 4vw;
     height: 0.3vw;
@@ -842,15 +786,15 @@
 }
 
 @media(max-width:425px){
-    .above-element::before{
+    .m-attributes-small-hover__above::before{
     width: 12vw;
     height: 1vw;
     left: 12%;
     }
 }
 
-/* HOVER - segundo elemento do topo para as imagens pequenas da seção atributos */
-.above-element::after{
+/* HOVER - segundo elemento do topo para as imagens pequenas*/
+.m-attributes-small-hover__above::after{
     content: "";
     width: 0.3vw;
     height: 4vw;
@@ -862,19 +806,16 @@
 }
 
 @media(max-width:425px){
-    .above-element::after{
+    .m-attributes-small-hover__above::after{
         width: 1vw;
         height: 12vw;
         left: 12%;
     }
 }
 
-/* HOVER - título para as imagens pequenas da seção atributos */
-.atributtes-title{
-    color: #FFFFFF;
+.m-attributes-small-hover__title{
     font-size: 1.5vw;
     width: 7vw;
-    /* background-color: aqua; */
     font-weight: bolder;
     position: absolute;
     top: 12%;
@@ -884,7 +825,7 @@
 }
 
 @media(max-width:425px){
-    .atributtes-title{
+    .m-attributes-small-hover__title{
         font-size: 5.5vw;
         width: 24vw;
         top: 12%;
@@ -892,12 +833,9 @@
     }
 }
 
-/* HOVER - texto para as imagens pequenas da seção atributos */
-.atributtes-txt{
-    color: #FFFFFF;
+.m-attributes-small-hover__txt{
     font-size: 0.8vw;
     width: 20vw;
-    /* background-color: rgb(9, 255, 0); */
     position: absolute;
     top: 49%;
     left: 11%;
@@ -906,7 +844,7 @@
 }
 
 @media(max-width:425px){
-    .atributtes-txt{
+    .m-attributes-small-hover__txt{
         font-size: 3.6vw;
         width: 58vw;
         top: 43%;
@@ -915,12 +853,8 @@
     }
 }
 
-
-/* HOVER - btn para as imagens pequenas da seção atributos */
-.atributtes-btn{
-    color: #FFFFFF;
+.m-attributes-small-hover__btn{
     font-size: 1.1vw;
-    /* background-color: rgb(153, 0, 255); */
     border: solid 0.3vw white;
     display: flex;
     align-items: center;
@@ -934,7 +868,7 @@
 }
 
 @media(max-width:425px){
-    .atributtes-btn{
+    .m-attributes-small-hover__btn{
         font-size: 4.1vw;
         border: solid 0.8vw white;
         width: 32vw;
@@ -944,8 +878,8 @@
     }
 }
 
-/* HOVER - primeiro elemento abaixo para as imagens pequenas da seção atributos */
-.element-below::before{
+/* HOVER - primeiro elemento de baixo para as imagens pequenas*/
+.m-attributes-small-hover__below::before{
     content: "";
     width: 4vw;
     height: 0.3vw;
@@ -957,7 +891,7 @@
 }
 
 @media(max-width:425px){
-    .element-below::before{
+    .m-attributes-small-hover__below::before{
     width: 12vw;
     height: 1vw;
     bottom: 6%;
@@ -965,8 +899,8 @@
     }
 }
 
-/* HOVER - segundo elemento abaixo para as imagens pequenas da seção atributos */
-.element-below::after{
+/* HOVER - segundo elemento abaixo para as imagens pequenas*/
+.m-attributes-small-hover__below::after{
     content: "";
     width: 0.3vw;
     height: 4vw;
@@ -978,7 +912,7 @@
 }
 
 @media(max-width:425px){
-    .element-below::after{
+    .m-attributes-small-hover__below::after{
         width: 1vw;
         height: 12vw;
         bottom: 6%;
@@ -986,9 +920,7 @@
     }
 }
 
-/* FLEXIBILIDADE - caixa e posicionamento dos elementos da imagem "hierarquia" e do texto da seção atributos */
-.main-section-middle-div-final-img-container{
-    /* background-color: springgreen; */
+.m-hierarchy{
     width: 94.5vw;
     display: flex;
     flex-direction: column;
@@ -996,76 +928,64 @@
 }
 
 @media (max-width:425px){
-    .main-section-middle-div-final-img-container{
-        /* background-color: springgreen; */
+    .m-hierarchy{
         width: 100vw;
     }
 }
 
-/* inserindo imagem hierarquia */
-.main-section-middle-div-final-img-container img{
+.m-hierarchy__img{
     width: 88.5vw;
-    /* background-color: tomato; */
     padding: 7vw 0 0;
 }
 
 @media (max-width:425px){
-    .main-section-middle-div-final-img-container img{
+    .m-hierarchy__img{
     width: 100vw;
     }
 }
 
-/* inserindo texto de rodapé da imagem "hierarquia" */
-.main-section-middle-div-final-img-container p{
+.m-hierarchy__txt{
     width: 44vw;
-    /* background-color: violet; */
     font-size: 1vw;
     padding: 2vw 0 0;
     text-align: right;
-    color: #FFFFFF;
+    
 }
 
 @media (max-width:425px){
-    .main-section-middle-div-final-img-container p{
+    .m-hierarchy__txt{
         width: 69vw;
         font-size: 2.3vw;
         padding: 0vw 0 0;
     }
 }
 
-/*///////////////// AQUI COMEÇA A SEÇÃO "COMO JOGAR?" DA MAIN ///////////////*/
-
-/* caixa de fundo da seção "como jogar" */
-.main-section-final{
+/* sessão "como jogar?" */
+.m-play-container{
     background-image: linear-gradient( #2D2D2D 50%, #FFFFFF 50%);
-    /* background-color: deeppink; */
     display: flex;
 }
 
 @media (max-width:425px){
-    .main-section-final{
+    .m-play-container{
         background-image: linear-gradient( #2D2D2D 18%, #FFFFFF 18%);
     }
 }
 
-/* POSICIONAMENTO - caixa de fundo da imagem de lado da seção "como jogar" */
-.main-section-final-div-aside-img-container{
-    /* background-color: darkgoldenrod; */
+.m-play{
     width: 35vw;
     height: 42.3vw;
     position: relative;
 }
 
 @media (max-width:425px){
-    .main-section-final-div-aside-img-container{
+    .m-play{
         width: 50vw;
         height: 140vw;
     }
 }
 
-/* inserindo a imagem de lado da seção "como jogar" */
-.main-section-final-div-aside-img-container img{
-    /* background-color: crimson; */
+.m-play__img{
     width: 27.5vw;
     position: absolute;
     right: 0%;
@@ -1073,52 +993,46 @@
 }
 
 @media (max-width:425px){
-    .main-section-final-div-aside-img-container img{
+    .m-play__img{
         width: 92.5vw;
         right: -22%;
     }
 }
 
-/* caixa coletiva dos textos e botões seção "como jogar" */
-.main-section-final-txt-btns-container{
-    /* background-color: blueviolet; */
+.m-play-container-internal{
     width: 60vw;
     height: 42.3vw;
 }
 
 @media (max-width:425px){
-    .main-section-final-txt-container{
+    .m-play-container-internal{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        height: 25vw;
+        justify-content: center;
+        height: 137vw;
     }
 }
 
-/*POSICIONAMENTO - título da seção "como jogar" */
-.main-section-final-txt-container h3{
-    /* background-color: chartreuse; */
+.m-play__title{
     width: 60vw;
     height: 21vw;
-    color: #FFFFFF;
     font-size: 2.5vw;
     text-transform: uppercase;
     padding: 20% 0 0 20%;
 }
 
 @media (max-width:425px){
-    .main-section-final-txt-container h3{
+    .m-play__title{
         width: 30vw;
-        height: 5vw;
+        height: 24vw;
         font-weight: 900;
         font-size: 4vw;
-        padding: 0 0;
+        padding: 9vw 0;
     }
 }
 
-/*FLEXIBILIDADE - caixa de fundo coletiva dos botões da seção "como jogar" */
-.main-section-final-btns{
-    /* background-color: dodgerblue; */
+.m-play-btn-container{
     height: 21.3vw;
     display: flex;
     justify-content: space-around;
@@ -1127,162 +1041,45 @@
 }
 
 @media (max-width:425px){
-    .main-section-final-btns{
+    .m-play-btn-container{
         height: 109.3vw;
         align-items: center;
         flex-direction: column;
     }
 }
 
-/*FLEXIBILIDADE - caixa de fundo individual dos botões da seção "como jogar" */
-.main-section-final-btn-container{
+.m-play-btn{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    /* background-color: darkorchid; */
     width: 15vw;
     height: 15vw;
 }
 
 @media (max-width:425px){
-    .main-section-final-btn-container{
-        width: 32vw;
-        height: 30vw;
+    .m-play-btn{
+        width: 47vw;
+        height: 33vw;
     }
 }
 
-/* título em número dos botões da seção "como jogar" */
-.main-section-final-btn-container h3{
+.m-play-btn__title{
     font-size: 2.5vw;
     font-weight: lighter;
     height: 5vw;
+    color: #000000;
 }
 
 @media (max-width:425px){
-    .main-section-final-btn-container h3{
-        font-size: 5.5vw;
-        height: 7vw;
+    .m-play-btn__title{
+        font-size: 7.5vw;
+        height: 9vw;
     }
 }
 
-/*cor de fundo dos elementos dos botões da seção "como jogar" */
-.element-button{
-    width: 14.5vw;
-    height: 3.5vw;
-    background-color:#000000;
-    position: absolute;
-    top: 35%;
-    right: 2%;
-    z-index: 4;
-}
-
-@media (max-width:425px){
-    .element-button{
-        width: 30.5vw;
-        height: 8.5vw;
-    }
-}
-
-/* HOVER - cor de fundo secundário dos elementos dos botões da seção "como jogar" para ser acionado com hover */
-.element-button::before{
-    content: "";
-    width: 0vw;
-    height: 3.5vw;
-    background-color: #D74430;
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    z-index: 4;
-}
-
-@media (max-width:425px){
-    
-    .element-button::before{
-        width: 0vw;
-        height: 8.5vw;
-        }
-}
-
-/* HOVER - acionando o hover dos botões */
-.main-section-final-btn-container:hover .element-button::before{
-    width: 14.5vw;
-    transition: 1s;
-}
-
-@media (max-width:425px){
-    .main-section-final-btn-container:hover .element-button::before{
-        width: 30.5vw;
-        height: 8.5vw;
-    }
-}
-
-/* HOVER - deixando com maior peso o texto da seção "como jogar" */
-.main-section-final-btn-container:hover h3{
-    font-weight: bolder;
-    transition: 0.5s;
-}
-
-/* elemento abaixo do botão da seção "como jogar"*/
-.object-btn{
-    content: "";
-    background-color: #000000;
-    /* background-color: lime; */
-    width: 5vw;
-    height: 0.5vw;
-    position: absolute;
-    bottom: 0%;
-    left: 34%;
-    z-index: 3;
-}
-
-@media (max-width:425px){
-    .object-btn{
-    width: 17vw;
-    height: 1vw;
-    position: absolute;
-    bottom: 0%;
-    left: 25%;
-    }
-}
-
-/* HOVER - elemento abaixo oculto para acionar o hover da seção "como jogar" */
-.object-btn::before{
-    content: "";
-    width: 0vw;
-    height: 0.5vw;
-    background-color: #D74430;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    z-index: 3;
-}
-
-@media (max-width:425px){
-    .object-btn::before{
-        height: 1vw;
-    }
-}
-
-/* HOVER - acionando o hover do elemento abaixo dos botões da seção "como jogar" */
-.main-section-final-btn-container:hover .object-btn::before{
-    width: 5vw;
-    transition: 1s;
-    background-color: #D74430;
-}
-
-@media (max-width:425px){
-    .main-section-final-btn-container:hover .object-btn::before{
-        width: 17vw;
-        height: 1vw;
-        transition: 1s;
-        background-color: #D74430;
-    }
-}
-
-/* âncora-texto dos botões da seção "como jogar" */
-.main-section-final-btn-container a{
-    color: #FFFFFF;
+/* txt do btn*/
+.m-play-btn__btn{
     font-weight: lighter;
     font-size: 1.5vw;
     text-transform: uppercase;
@@ -1295,96 +1092,194 @@
     position: absolute;
     top: 35%;
     right: 0%;
-    /* background-color: aqua; */
 }
 
 @media (max-width:425px){
-    .main-section-final-btn-container a{
-        font-size: 3.5vw;
-        width: 31.5vw;
-        height: 8.5vw;
+    .m-play-btn__btn{
+        font-size: 4.5vw;
+        width: 42.5vw;
+        height: 11.5vw;
         right: 1%;
+        top: 30%;
     }
 }
 
-/* FLEXIBILIDADE - deixando os spans internos flexiveis. As caixas contêm  elementos de texto da seção "como jogar" */
-.main-section-final-btn-container-text{
-    display: flex;
-    flex-direction: column;
+/*cor de fundo do botão */
+.m-play-btn__element{
+    width: 14.5vw;
+    height: 3.5vw;
+    background-color:#000000;
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    z-index: 4;
+}
+
+@media (max-width:425px){
+    .m-play-btn__element{
+        width: 42.5vw;
+        height: 11.5vw;
+        right: 5%;
+        top: 30%;
+    }
+}
+
+/* HOVER - cor de fundo do botão*/
+.m-play-btn__element::before{
+    content: "";
+    width: 0vw;
+    height: 3.5vw;
+    background-color: #D74430;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 4;
+}
+
+@media (max-width:425px){
+    .m-play-btn__element::before{
+        width: 0vw;
+        height: 11.5vw;
+        }
+}
+
+/* HOVER - acionando o hover dos botões */
+.m-play-btn:hover .m-play-btn__element::before{
+    width: 14.5vw;
+    transition: 1s;
+}
+
+@media (max-width:425px){
+    .m-play-btn:hover .m-play-btn__element::before{
+        width: 42.5vw;
+        height: 11.5vw;
+    }
+}
+
+/* HOVER - título */
+.m-play-btn:hover .m-play-btn__title{
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+/* FLEXIBILIDADE - deixando os spans internos flexiveis.*/
+.m-play-btn__txt{
     width: 11vw;
     padding: 1%;
-}
-
-@media (max-width:425px){
-    .main-section-final-btn-container-text{
-        display: flex;
-        flex-direction: column;
-        width: 29vw;
-        /* background-color: aqua; */
-        padding: 0%;
-    }
-}
-
-/* texto da seção "como jogar" */
-.main-section-final-btn-container p{
     font-size: 1vw;
     font-weight: lighter;
-    /* background-color: crimson; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     position: absolute;
     top: 66%;
     left: 13%;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width:425px){
-    .main-section-final-btn-container p{
+    .m-play-btn__txt{
         font-size: 3vw;
         font-weight: lighter;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
         position: absolute;
         top: 68%;
         left: 5%;
+        width: 42vw;
+        padding: 0%;
     }
 }
 
-/*///////////////////////// AQUI COMEÇA A FOOTER ////////////////////////*/
+.m-play-btn__txt span{
+    color: #000000;
+}
 
-.footer-section-container{
+/* elemento abaixo do botão*/
+.m-play-btn__object{
+    content: "";
+    background-color: #000000;
+    width: 5vw;
+    height: 0.5vw;
+    position: absolute;
+    bottom: 0%;
+    left: 34%;
+    z-index: 3;
+}
+
+@media (max-width:425px){
+    .m-play-btn__object{
+    width: 17vw;
+    height: 1vw;
+    position: absolute;
+    bottom: 0%;
+    left: 32%;
+    }
+}
+
+/* HOVER - elemento abaixo oculto*/
+.m-play-btn__object::before{
+    content: "";
+    width: 0vw;
+    height: 0.5vw;
+    background-color: #D74430;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: 3;
+}
+
+@media (max-width:425px){
+    .m-play-btn__object::before{
+        height: 1vw;
+    }
+}
+
+/* HOVER - acionando o hover do elemento abaixo*/
+.m-play-btn:hover .m-play-btn__object::before{
+    width: 5vw;
+    transition: 1s;
+    background-color: #D74430;
+}
+
+@media (max-width:425px){
+    .m-play-btn:hover .m-play-btn__object::before{
+        width: 17vw;
+        height: 1vw;
+        transition: 1s;
+        background-color: #D74430;
+    }
+}
+
+/* aqui começa a footer*/
+.f-container{
     display: flex;
 }
 
 @media (max-width:425px){
-    .footer-section-container{
+    .f-container{
         display: flex;
         flex-direction: column;
     }
 }
 
-.footer-section-div-container{
+.f-container-left{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
     height: 54vw;
     width: 63.5vw;
-    /* background-color:darkblue; */
 }
 
 @media (max-width:425px){
-    .footer-section-div-container{
+    .f-container-left{
     justify-content: flex-start;
     height: 100%;
     width: 100vw;
     }
 }
 
-.footer-section-div-container-div-initial{
+.f-app{
     background-color: #FF5A56;
     height: 28vw;
     width: 63.5vw;
@@ -1395,7 +1290,7 @@
 }
 
 @media (max-width:425px){
-    .footer-section-div-container-div-initial{
+    .f-app{
         height: 77vw;
         width: 100vw;
         justify-content: flex-end;
@@ -1404,59 +1299,47 @@
     }
 }
 
-.footer-section-div-container-div-initial h3{
+.f-app__title{
     font-size: 3vw;
-    color: #FFFFFF;
     text-transform: uppercase;
     padding: 3% 0 2% ;
-    /* background-color: darkgoldenrod; */
 }
-
 
 @media (max-width:425px){
-    .footer-section-div-container-div-initial h3{
+    .f-app__title{
         font-size: 12vw;
-}
+    }
 }
 
-.footer-section-div-container-div-initial p{
+.f-app__txt{
     width: 28.8vw;
-    /* background-color: coral; */
     padding: 0 1% 0 0;
-    color: #FFFFFF;
     font-weight: lighter;
     font-size: 1vw;
 }
 
 @media (max-width:425px){
-    .footer-section-div-container-div-initial p{
+    .f-app__txt{
         width: 71.8vw;
         padding: 0 1% 0 0;
-        color: #FFFFFF;
         font-weight: lighter;
         font-size: 4vw;
     }
 }
 
-.footer-section-div-container-div-initial p span{
-    color: #FFFFFF;
-}
-
-.footer-section-div-container-div-initial img{
-    /* background-color: cyan; */
+.f-app__img{
     width: 14vw;
     padding: 1.5% 0 3%;
 }
 
 @media (max-width:425px){
-    .footer-section-div-container-div-initial img{
-    /* background-color: cyan; */
+    .f-app__img{
     width: 35.5vw;
     padding: 5% 0 5%;
     }
 }
 
-.footer-section-div-container-div-initial::after{
+.f-app::after{
     content: "";
     width: 28.3vw;
     height: 0.25vw;
@@ -1464,14 +1347,14 @@
 }
 
 @media (max-width:425px){
-    .footer-section-div-container-div-initial::after{
+    .f-app::after{
     content: "";
     width: 71.3vw;
     height: 1.25vw;
     }
 }
 
-.footer-section-div-container-div-final{
+.f-starwars{
     background-color: #FF5A56;
     height: 16vw;
     width: 63.5vw;
@@ -1483,7 +1366,7 @@
 }
 
 @media (max-width:425px){
-    .footer-section-div-container-div-final{
+    .f-starwars{
         height: 118vw;
         width: 100vw;
         align-items: center;
@@ -1491,60 +1374,55 @@
     }
 }
 
-.footer-section-div-container-div-final img{
-    /* background-color:darkorchid; */
+.f-starwars__img{
     width: 12.8vw;
     padding: 1.5% 0;
 }
 
 @media (max-width:425px){
-    .footer-section-div-container-div-final img{
-        /* background-color:darkorchid; */
+    .f-starwars__img{
         width: 43.8vw;
     }
 }
 
-.footer-section-div-container-div-final p{
+.f-starwars__txt{
     width: 28.3vw;
     font-size: 1vw;
-    /* background-color: coral; */
     padding: 0 1% 0 0;
     color:#FFFFFF;
     font-weight: lighter;
 }
 
 @media (max-width:425px){
-    .footer-section-div-container-div-final p{
+    .f-starwars__txt{
         width: 73.3vw;
         font-size: 4vw;
     }
 }
 
-.footer-section-figure-aside{
+.f-container-right{
     position: relative;
-    /* background-color:greenyellow; */
     width: 29vw;
     height: 54vw;
     bottom: 0%;   
 }
 
 @media (max-width:425px){
-    .footer-section-figure-aside{
+    .f-container-right{
         width: 100vw;
         height: 83vw;
     }
 }
 
-.footer-section-figure-aside img{
+.f-right__img{
     position: absolute;
     top: 6%;
     right: 0%;
     width: 39vw;
-    /* background-color: darkred; */
 }
 
 @media (max-width: 425px){
-    .footer-section-figure-aside img{
+    .f-right__img{
         position: absolute;
         top: -59%;
         right: 3%;
@@ -1552,17 +1430,16 @@
     }
 }
 
-.footer-section-box-txt{
+.f-right-box{
     width: 20vw;
     height: 4vw;
     position: absolute;
     bottom: 0%;
     left: 21%;
-    /* background-color: darkred; */
 }
 
 @media (max-width: 425px){
-    .footer-section-box-txt{
+    .f-right-box{
         width: 100vw;
         height: 12vw;
         left: 0%;
@@ -1571,16 +1448,20 @@
     }
 }
 
-.footer-section-figure-aside p{
-    /* background-color: blueviolet; */
+.f-right-box__txt{
     width: 20vw;
     font-size: 0.8vw;
+    color: #000000;
 }
 
 @media (max-width:425px){
-    .footer-section-figure-aside p{
+    .f-right-box__txt{
         width: 82vw;
         font-size: 2.8vw;
         padding: 0 0 1% 0;
     }
+}
+
+.f-right-box__txt span{
+    color: #000000;
 }
